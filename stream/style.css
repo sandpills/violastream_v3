@@ -22,7 +22,7 @@ body {
   position: fixed;
   width: 50%;
   left: 2%;
-  bottom: 3%;
+  top: 30%;
 }
 
 
@@ -33,8 +33,8 @@ body {
 
 #messagebox {
   position: fixed;
-  right: 25%;
-  top: 3%;
+  left: 2%;
+  bottom: 10%;
 }
 
 .stop {
@@ -95,6 +95,7 @@ h1 {
   color: #ffab20;
   font-size: 4vh;
 }
+
 p {
   font-family: "nomaco";
   color: #ffab20;
