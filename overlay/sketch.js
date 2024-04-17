@@ -13,13 +13,8 @@ function setup() {
   socket = io.connect();
   socket.on('taskList', receiveTask);
   socket.on('greetingFromUser', displayMessageFromUser);
-  socket.on('cameraLeftButton', cameraLeft);
-  socket.on('cameraRightButton', cameraRight);
-  socket.on('cameraUpButton', cameraUp);
-  socket.on('cameraDownButton', cameraDown);
 
   textspeech = new p5.Speech();
-
 }
 
 function mousePressed() {
