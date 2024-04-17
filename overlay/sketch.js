@@ -22,12 +22,12 @@ function mousePressed() {
 }
 
 function draw() {
-  textFont('monaco');
+  textFont('comic sans');
   background(0, 255, 0);
   textSize(20);
   textStyle(BOLD);
   noStroke();
-  fill(0, 0, 0, 100);
+  fill(255, 255, 0, 100);
   // rectMode(CORNER);
   // rect(0, 0, 260, 40 * tasks.length);
   for (let i = 0; i < tasks.length; i++) {
