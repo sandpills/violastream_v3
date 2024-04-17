@@ -5,7 +5,7 @@ let xOff = 0.0;
 let w = [];
 let vid;
 let textspeech;
-let timerCountDown = 5; // VIOLA use this variable to make a p tag or something that shows above the buttons. This will show the timer value after a button is clicked
+let timerCountDown = 3; // VIOLA use this variable to make a p tag or something that shows above the buttons. This will show the timer value after a button is clicked
 let countDown;
 let buttonsActive = true;
 

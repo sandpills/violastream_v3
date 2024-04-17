@@ -101,14 +101,6 @@ function receiveTask(data, count) {
   if (Array.isArray(data)) {
     tasks = data;
     textspeech.speak(data[data.length - 1]);
-  } else {
-    // if it's not an array, that means we're getting the winner message
-    if (typeof data === 'string') {
-      tasks = [];
-      title = 'viola must: ' + data + ' (' + str(count) + ' votes)';
-      textspeech.speak(title);
-      // winnerCount = count;
-    }
   }
 }
 
