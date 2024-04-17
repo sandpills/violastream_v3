@@ -57,11 +57,6 @@ function draw() {
   }
   pop();
 
-  // green rectangle to block off lower half
-  rectMode(CORNER);
-  fill(0, 255, 0);
-  rect(0, windowHeight - windowHeight/3, windowWidth, windowHeight/2);
-
 }
 
 // text flying thingy
