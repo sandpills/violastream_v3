@@ -154,7 +154,7 @@ canvas {
   #messagebox {
     position: fixed;
     left: 3%;
-    top: 60%;
+    bottom: 20%;
   }
 
   /*   
