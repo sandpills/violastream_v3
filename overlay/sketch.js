@@ -22,9 +22,9 @@ function mousePressed() {
 }
 
 function draw() {
-  textFont('comic sans');
+  textFont("Comic Sans MS");
   background(0, 255, 0);
-  textSize(20);
+  textSize(30);
   textStyle(BOLD);
   noStroke();
   fill(255, 255, 0, 100);
