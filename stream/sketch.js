@@ -25,7 +25,7 @@ function setup() {
   button = createButton('send');
   button.parent('messagebox');
   button.mousePressed(greet);
-  button.position(input.x + input.width + 120, 0);
+  button.position(input.x + input.width + 150, 0);
   button.style('font-size', 20 + 'px');
   button.style('background-color', 'rgba(0, 0, 0, 0.7)');
   button.style('color', '#ffffff');

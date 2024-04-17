@@ -97,8 +97,8 @@ h1 {
 }
 
 p {
-  font-family: "nomaco";
-  color: #ffffff;
+  font-family: "monaco";
+  color: #ffab20;
   font-size: 3vh;
 }
 
@@ -129,7 +129,7 @@ canvas {
 
   p {
     font-family: "monaco";
-    font-size: 15pt;
+    font-size: 13pt;
   }
 
   .button {
