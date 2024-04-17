@@ -18,15 +18,15 @@ function setup() {
   input.parent('messagebox');
   input.mousePressed(typing);
   input.position(0, 0);
-  input.style('font-size', 14 + 'px');
+  input.style('font-size', 20 + 'px');
   input.style('font-family', 'monaco');
   input.style('padding', '2px 10px');
   // the submit button
-  button = createButton('submit');
+  button = createButton('send');
   button.parent('messagebox');
   button.mousePressed(greet);
   button.position(input.x + input.width + 50, 0);
-  button.style('font-size', 14 + 'px');
+  button.style('font-size', 20 + 'px');
   button.style('background-color', 'rgba(0, 0, 0, 0.7)');
   button.style('color', '#ffffff');
   button.style('font-family', 'monaco');
@@ -39,7 +39,7 @@ function setup() {
   //***everything else can be commented out****//
 
   textAlign(CENTER);
-  textSize(28);
+  textSize(30);
 
   textspeech = new p5.Speech();
 }

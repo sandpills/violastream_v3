@@ -27,24 +27,24 @@ function draw() {
   textSize(30);
   textStyle(BOLD);
   noStroke();
-  fill(0, 0, 0, 100);
+  // fill(0, 0, 0, 100);
   // rectMode(CORNER);
   // rect(0, 0, 260, 40 * tasks.length);
   for (let i = 0; i < tasks.length; i++) {
-    fill(255, 255, 0);
+    fill(255,255,0);
     textAlign(LEFT);
-    text(tasks[tasks.length - 1 - i], windowWidth - windowWidth/5, 200 + i * 40);
+    text(tasks[tasks.length - 1 - i], windowWidth - windowWidth/4, 200 + i * 40);
   }
-  textSize(30);
-  textAlign(CENTER);
+  // textSize(30);
+  // textAlign(CENTER);
 
-  if (title !== '') {
-    rectMode(CENTER);
-    fill(0);
-    rect(width / 2, 70, 680, 50);
-    fill(255);
-    text(title, width / 2, 80);
-  }
+  // if (title !== '') {
+  //   rectMode(CENTER);
+  //   fill(0);
+  //   rect(width / 2, 70, 680, 50);
+  //   fill(255);
+  //   text(title, width / 2, 80);
+  // }
 
   // text flying thingy
   push();
@@ -85,7 +85,7 @@ class Word {
 
   moveAndDisplay() {
     let tWidth = textWidth(this.word);
-    fill(255);
+    fill(255,255,0);
     textAlign(CENTER);
     rectMode(CENTER);
     rect(this.x+20, this.y-30, tWidth+20, 40);
