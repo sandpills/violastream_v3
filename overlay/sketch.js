@@ -27,15 +27,15 @@ function draw() {
   textSize(30);
   textStyle(BOLD);
   noStroke();
-  fill(255, 255, 0, 100);
+  fill(0, 0, 0, 100);
   // rectMode(CORNER);
   // rect(0, 0, 260, 40 * tasks.length);
   for (let i = 0; i < tasks.length; i++) {
-    fill(255);
+    fill(255, 255, 0);
     textAlign(LEFT);
     text(tasks[tasks.length - 1 - i], windowWidth - windowWidth/5, 200 + i * 40);
   }
-  textSize(25);
+  textSize(30);
   textAlign(CENTER);
 
   if (title !== '') {

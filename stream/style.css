@@ -6,27 +6,6 @@ body {
   margin: 0;
 }
 
-/* making stream div behind everything */
-div:first-child {
-  opacity: 0.99;
-}
-
-/* stream */
-
-.streamWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 1%;
-  height: 0;
-}
-.streamWrapper iframe {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .header {
   position: fixed;
   top: 1%;
@@ -41,46 +20,11 @@ div:first-child {
 
 #commands {
   position: fixed;
-  width: 40%;
+  width: 50%;
   left: 2%;
   bottom: 3%;
 }
 
-#camera {
-  position: fixed;
-  width: 20%;
-  height: 20%;
-  right: 2%;
-  bottom: 3%;
-}
-
-#lbutton {
-  position: absolute;
-  left: 0;
-  bottom: 50%;
-  transform: translateY(50%);
-}
-
-#rbutton {
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  transform: translateY(50%);
-}
-
-#ubutton {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-}
-
-#dbutton {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-}
 
 .arrow {
   height: 20px;
@@ -111,7 +55,8 @@ div:first-child {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  /* font-size: 20px; */
+  font-size: 4vh;
   margin: 4px 2px;
   cursor: pointer;
   transition-duration: 0.4s;
@@ -158,7 +103,7 @@ p {
 #messageinput {
   font-family: "monaco";
   color: #ffffff;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 canvas {
@@ -182,17 +127,17 @@ canvas {
 
   p {
     font-family: "monaco";
-    font-size: 10pt;
+    font-size: 15pt;
   }
 
   .button {
-    font-size: 10pt;
+    font-size: 15pt;
   }
 
   #commands {
     position: fixed;
     width: 100%;
-    height: 40%;
+    height: 50%;
     left: 2%;
     top: 10%;
   }
@@ -204,23 +149,12 @@ canvas {
     bottom: 22%;
   }
 
-  #camera {
-    position: fixed;
-    width: 50%;
-    height: 18%;
-    left: 2%;
-    bottom: 3%;
-  }
-
   #messagebox {
     position: fixed;
     left: 2%;
-    top: 65%;
+    top: 60%;
   }
 
-  .streamWrapper {
-    display: none;
-  }
   /*   
   #mobileText {
       display: block;

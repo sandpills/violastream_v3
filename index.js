@@ -18,8 +18,8 @@ io.on('connection', socket => {
 });
 
 // routes
-app.use('/', express.static('public'));
-app.use('/stream', express.static('stream'));
+app.use('/', express.static('stream'));
+// app.use('/stream', express.static('stream'));
 app.use('/overlay', express.static('overlay'));
 app.use('/done', express.static('done'));
 
@@ -31,17 +31,8 @@ io.sockets.on('connection', socket => {
   socket.on('task', data => {
     // socket listening to "task" coming in from HTML page
     if (data.task !== 'endTask') {
-      if (data.task === 'left') { //THIS WHOLE SECTION IS TRYING TO DO THE CAMERA THING!!!
-        socket.broadcast.emit('cameraLeftButton');
-      } else if (data.task === 'right') {
-        socket.broadcast.emit('cameraRightButton');
-      } else if (data.task === 'up') { 
-        socket.broadcast.emit('cameraUpButton');
-      } else if (data.task === 'down') { 
-        socket.broadcast.emit('cameraDownButton');
-      } 
       // task messages
-      else if (data.task === 'STOP TASK') {
+      if (data.task === 'STOP TASK') {
         socket.broadcast.emit('greetingFromUser', 'STOP TASK');
         stopTaskVotes++;
         let winner =
