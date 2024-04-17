@@ -140,20 +140,20 @@ canvas {
     position: fixed;
     width: 100%;
     height: 50%;
-    left: 2%;
+    left: 3%;
     top: 30%;
   }
 
   #mobileText {
     display: block;
     position: fixed;
-    left: 2%;
+    left: 3%;
     bottom: 10%;
   }
 
   #messagebox {
     position: fixed;
-    left: 2%;
+    left: 3%;
     top: 60%;
   }
 
